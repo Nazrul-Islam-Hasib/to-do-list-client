@@ -15,7 +15,7 @@ const AddService = () => {
                 userEmail: loggedInUser.email,
                 completed: false,
             }
-            const url = 'http://localhost:5000/addToDo';
+            const url = 'https://api-dot-to-do-list-353508.ey.r.appspot.com/addToDo';
             fetch(url, {
                 method: 'POST',
                 headers: {

@@ -6,14 +6,14 @@ const ToDo = () => {
     const [toDo, setToDo] = useState([]);
     const [toDoitem, setToDoItem] = useContext(ToDoContext);
     useEffect(()=>{
-        fetch('http://localhost:5000/todo')
+        fetch('https://api-dot-to-do-list-353508.ey.r.appspot.com/todo')
         .then(res => res.json())
         .then(data => setToDo(data))
     },[])
     
     const handleData = () => {
         console.log("child to parent");
-        fetch('http://localhost:5000/todo')
+        fetch('https://api-dot-to-do-list-353508.ey.r.appspot.com/todo')
         .then(res => res.json())
         .then(data => setToDo(data))
     }

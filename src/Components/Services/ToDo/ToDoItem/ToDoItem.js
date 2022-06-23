@@ -26,7 +26,7 @@ const ToDoItem = (props) => {
     const updateData = {
       updatedToDo: data.updatedData
     }
-    const url = `http://localhost:5000/update/${_id}`
+    const url = `https://api-dot-to-do-list-353508.ey.r.appspot.com/update/${_id}`
     fetch(url, {
       method: 'PATCH',
       headers: {
@@ -53,7 +53,7 @@ const ToDoItem = (props) => {
     const updateData = {
       updatedToDo: true
     }
-    const url = `http://localhost:5000/updateStatus/${id}`
+    const url = `https://api-dot-to-do-list-353508.ey.r.appspot.com/updateStatus/${id}`
     fetch(url, {
       method: 'PATCH',
       headers: {
@@ -74,7 +74,7 @@ const ToDoItem = (props) => {
 
   
   const deleteservice = (id) => {
-    const url = `http://localhost:5000/delete/${id}`
+    const url = `https://api-dot-to-do-list-353508.ey.r.appspot.com/delete/${id}`
     fetch(url, {
       method: 'DELETE'
     })
